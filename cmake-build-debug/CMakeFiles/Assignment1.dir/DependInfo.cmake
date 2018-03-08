@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/John/Documents/GitHub/CProjects/Assignment1/main.c" "C:/Users/John/Documents/GitHub/CProjects/Assignment1/cmake-build-debug/CMakeFiles/Assignment1.dir/main.c.obj"
-  "C:/Users/John/Documents/GitHub/CProjects/Assignment1/pal.c" "C:/Users/John/Documents/GitHub/CProjects/Assignment1/cmake-build-debug/CMakeFiles/Assignment1.dir/pal.c.obj"
-  "C:/Users/John/Documents/GitHub/CProjects/Assignment1/usefull.c" "C:/Users/John/Documents/GitHub/CProjects/Assignment1/cmake-build-debug/CMakeFiles/Assignment1.dir/usefull.c.obj"
+  "C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/main.c" "C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/cmake-build-debug/CMakeFiles/Assignment1.dir/main.c.obj"
+  "C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/pal.c" "C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/cmake-build-debug/CMakeFiles/Assignment1.dir/pal.c.obj"
+  "C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/usefull.c" "C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/cmake-build-debug/CMakeFiles/Assignment1.dir/usefull.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

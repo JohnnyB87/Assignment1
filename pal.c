@@ -7,6 +7,7 @@
 #include <malloc.h>
 #include <time.h>
 #include <stdlib.h>
+#include <getopt.h>
 #include "usefull.h"
 
 void displayState(int* pListOfNumbers, int  positionOfCursor, int numberOfDigits, int numberOfGoes)
@@ -169,10 +170,18 @@ int generateNumber(){
 
 int getUserInput(){
     int num;
-    printf("Enter a number: ");
-    scanf("%d", &num);
-    printf("%d\n\n",num);
-    return num;
+    char temp;
+    while(True) {
+        printf("Enter a number: ");
+        if (scanf("%d", &num, &temp) == 1 && temp == '\n') {
+            printf("%d\n\n", num);
+            return num;
+        } else {
+            printf("Enter a number please.\n");
+        }
+    }
+
+
 }
 
 void startGame(int initialNumber){

@@ -25,7 +25,6 @@ void displayState(int* pListOfNumbers, int  positionOfCursor, int numberOfDigits
         if(i < positionOfCursor) {
             strcat(src, " ");
         }
-
     }
 
     strcat(src, cursor);
@@ -169,19 +168,11 @@ int generateNumber(){
 }
 
 int getUserInput(){
+    printf("Enter a number: ");
     int num;
-    char temp;
-    while(True) {
-        printf("Enter a number: ");
-        if (scanf("%d", &num, &temp) == 1 && temp == '\n') {
-            printf("%d\n\n", num);
-            return num;
-        } else {
-            printf("Enter a number please.\n");
-        }
-    }
-
-
+    scanf("%d",&num);
+    printf("\n");
+    return num;
 }
 
 void startGame(int initialNumber){

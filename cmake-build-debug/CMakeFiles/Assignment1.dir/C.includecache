@@ -21,6 +21,8 @@ time.h
 -
 stdlib.h
 -
+getopt.h
+-
 usefull.h
 C:/Users/johnb/Documents/GitHubProjects/C/Assignment1/usefull.h
 

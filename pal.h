@@ -5,7 +5,6 @@
 #ifndef PAL_H_INCLUDED
 #define PAL_H_INCLUDED
 #include "usefull.h"
-#define number generateNumber()
 
 void displayState(int* pListOfNumbers,  int  positionOfCursor, int numberOfDigits, int numberOfGoes);
 void moveCursorRight( int* pPosOfCursor, int max);

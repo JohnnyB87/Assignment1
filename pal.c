@@ -7,7 +7,6 @@
 #include <malloc.h>
 #include <time.h>
 #include <stdlib.h>
-#include <getopt.h>
 #include "usefull.h"
 
 void displayState(int* pListOfNumbers, int  positionOfCursor, int numberOfDigits, int numberOfGoes)
@@ -163,7 +162,9 @@ int generateNumber(){
     int d = rand() % (RAND_MAX-1) + 1;
     printf("r = %d, d = %d, r/d : %d\n",r,d,r/d);
 
-    return r / d;
+    int n = (10000000001 % r);
+
+    return n;
 
 }
 

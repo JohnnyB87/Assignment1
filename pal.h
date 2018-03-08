@@ -19,4 +19,5 @@ void startGame(int initialNumber);
 int initialiseArray(int **pNumbers ,int numbers);
 int generateCursorPosition(int size);
 int generateNumber();
+int getUserInput();
 #endif // PAL_H_INCLUDED

@@ -167,6 +167,14 @@ int generateNumber(){
 
 }
 
+int getUserInput(){
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    printf("%d\n\n",num);
+    return num;
+}
+
 void startGame(int initialNumber){
 
     int *listOfNumbers;

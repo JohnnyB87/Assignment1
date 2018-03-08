@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="62e74b1d-f85c-4d6d-8fa7-2a1583b655b2" name="CProgrammingAssignment1" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="C:\Users\John\Documents\ClionProjects\Assignment1" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -2,8 +2,8 @@
 
 int main()
 {
-//    int initialNumber = getUserInput();
-    int initialNumber = generateNumber();
+    int initialNumber = getUserInput();
+//    int initialNumber = generateNumber();
     startGame(initialNumber);
     return 0;
 }

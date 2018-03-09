@@ -169,11 +169,25 @@ int generateNumber(){
 }
 
 int getUserInput(){
-    printf("Enter a number: ");
-    int num;
-    scanf("%d",&num);
-    printf("\n");
-    return num;
+    while(True) {
+        printf("Enter a Number: ");
+        int num;
+        int res = scanf("%d", &num);
+
+        if (res != 1) {
+            if (res == EOF) {
+
+            }
+            if (res == 0) {
+                while (fgetc(stdin) != '\n');
+            }
+        } else {
+            getchar();
+            return num;
+        }
+        printf("\n");
+
+    }
 }
 
 void startGame(int initialNumber){

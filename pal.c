@@ -157,7 +157,6 @@ int generateCursorPosition(int size){
 
 int generateNumber(){
     srand(time(0));
-    //int r = rand() % ((INT_MAX-10) + 10);
     int r = rand() * rand();
     int d = rand() % (RAND_MAX-1) + 1;
     printf("r = %d, d = %d, r/d : %d\n",r,d,r/d);

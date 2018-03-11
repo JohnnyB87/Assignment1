@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/main.c
+C:/Users/John/Documents/GitHub/CProjects/Assignment1/main.c
 pal.h
-C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/pal.h
+C:/Users/John/Documents/GitHub/CProjects/Assignment1/pal.h
 
-C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/pal.c
+C:/Users/John/Documents/GitHub/CProjects/Assignment1/pal.c
 stdio.h
 -
 string.h
@@ -22,17 +22,17 @@ time.h
 stdlib.h
 -
 usefull.h
-C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/usefull.h
+C:/Users/John/Documents/GitHub/CProjects/Assignment1/usefull.h
 
-C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/pal.h
+C:/Users/John/Documents/GitHub/CProjects/Assignment1/pal.h
 usefull.h
-C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/usefull.h
+C:/Users/John/Documents/GitHub/CProjects/Assignment1/usefull.h
 
-C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/usefull.c
+C:/Users/John/Documents/GitHub/CProjects/Assignment1/usefull.c
 stdio.h
 -
 usefull.h
-C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/usefull.h
+C:/Users/John/Documents/GitHub/CProjects/Assignment1/usefull.h
 
-C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/usefull.h
+C:/Users/John/Documents/GitHub/CProjects/Assignment1/usefull.h
 

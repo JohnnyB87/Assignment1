@@ -15,8 +15,9 @@ boolean isPalindrome(int* plistOfNumbers, int size);
 char getCommand();
 void processCommand(int* pList, int size, int* pPositionOfCursor, char command);
 void startGame(int initialNumber);
-int initialiseArray(int **pNumbers ,int numbers);
+void initialiseArray(int **pNumbers ,int numbers, int size);
 int generateCursorPosition(int size);
 int generateNumber();
 int getUserInput();
+int getArraySize(int numbers);
 #endif // PAL_H_INCLUDED

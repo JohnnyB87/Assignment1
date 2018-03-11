@@ -3,7 +3,7 @@
 int main()
 {
     int initialNumber = getUserInput();
-//    int initialNumber = generateNumber();
+//    initialNumber = generateNumber();
     startGame(initialNumber);
     return 0;
 }

@@ -120,31 +120,32 @@ void processCommand(int* pList, int size, int* pPositionOfCursor, char command){
     }
 }
 
-int initialiseArray(int** pNumbers ,int numbers){
+int getArraySize(int numbers){
     int counter = 1;
-    int numbersCopy = numbers;
 
-    while(numbersCopy > 9){
-        numbersCopy = numbersCopy/10;
+    while(numbers > 9){
+        numbers = numbers/10;
         counter++;
     }
 
-    int counterCopy = counter;
-    numbersCopy = numbers;
-    *pNumbers = malloc(sizeof(int)*(counter));
+    return counter;
+}
 
-    for(counterCopy; counterCopy > 0; counterCopy--){
-        int n = (numbersCopy % 10);
-        (*pNumbers)[counterCopy-1] = n;
+void initialiseArray(int** pNumbers ,int numbers, int size){
+    //int size = getArraySize(numbers);
 
-        numbersCopy = numbersCopy/10;
+    *pNumbers = malloc(sizeof(int)*(size));
+
+    for(size; size > 0; size--){
+        int n = (numbers % 10);
+        (*pNumbers)[size-1] = n;
+
+        numbers = numbers/10;
 
         printf("list[%d]: %d   n: %d    OAddress: %p     Address: %p\n",
-               counterCopy-1,
-               (*pNumbers)[counterCopy-1], n, pNumbers, (pNumbers + (counterCopy-1)));
+               size-1,
+               (*pNumbers)[size-1], n, pNumbers, (pNumbers + (size-1)));
     }
-
-    return counter;
 }
 
 int generateCursorPosition(int size){
@@ -174,9 +175,9 @@ int getUserInput(){
         int res = scanf("%d", &num);
 
         if (res != 1) {
-            if (res == EOF) {
-
-            }
+//            if (res == EOF) {
+//
+//            }
             if (res == 0) {
                 while (fgetc(stdin) != '\n');
             }
@@ -192,7 +193,8 @@ int getUserInput(){
 void startGame(int initialNumber){
 
     int *listOfNumbers;
-    int numberOfDigits = initialiseArray(&listOfNumbers, initialNumber);
+    int numberOfDigits = getArraySize(initialNumber);
+    initialiseArray(&listOfNumbers, initialNumber, numberOfDigits);
     int positionOfCursor = generateCursorPosition(numberOfDigits);
     int numberOfGoes = 0;
 

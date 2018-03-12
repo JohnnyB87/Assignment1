@@ -6,7 +6,6 @@
 #include <string.h>
 #include <malloc.h>
 #include <time.h>
-#include <stdlib.h>
 #include "usefull.h"
 
 void displayState(int* pListOfNumbers, int  positionOfCursor, int numberOfDigits, int numberOfGoes)
@@ -120,7 +119,7 @@ void processCommand(int* pList, int size, int* pPositionOfCursor, char command){
     }
 }
 
-int getArraySize(int numbers){
+int length(int numbers){
     int counter = 1;
 
     while(numbers > 9){
@@ -169,12 +168,14 @@ int generateNumber(){
 }
 
 int getUserInput(){
+    printf("Enter a Number: ");
     while(True) {
-        printf("Enter a Number: ");
+
         int num;
         int res = scanf("%d", &num);
 
         if (res != 1) {
+            printf("Enter a Valid Number: ");
 //            if (res == EOF) {
 //
 //            }
@@ -193,7 +194,7 @@ int getUserInput(){
 void startGame(int initialNumber){
 
     int *listOfNumbers;
-    int numberOfDigits = getArraySize(initialNumber);
+    int numberOfDigits = length(initialNumber);
     initialiseArray(&listOfNumbers, initialNumber, numberOfDigits);
     int positionOfCursor = generateCursorPosition(numberOfDigits);
     int numberOfGoes = 0;

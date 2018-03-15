@@ -19,5 +19,5 @@ void initialiseArray(int **pNumbers ,int numbers, int size);
 int generateCursorPosition(int size);
 int generateNumber();
 int getUserInput();
-int length(int numbers);
+int getSize(int numbers);
 #endif // PAL_H_INCLUDED

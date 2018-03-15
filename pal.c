@@ -119,7 +119,7 @@ void processCommand(int* pList, int size, int* pPositionOfCursor, char command){
     }
 }
 
-int length(int numbers){
+int getSize(int numbers){
     int counter = 1;
 
     while(numbers > 9){
@@ -131,7 +131,7 @@ int length(int numbers){
 }
 
 void initialiseArray(int** pNumbers ,int numbers, int size){
-    //int size = getArraySize(numbers);
+    //int size = getSize(numbers);
 
     *pNumbers = malloc(sizeof(int)*(size));
 
@@ -141,9 +141,8 @@ void initialiseArray(int** pNumbers ,int numbers, int size){
 
         numbers = numbers/10;
 
-        printf("list[%d]: %d   n: %d    OAddress: %p     Address: %p\n",
-               size-1,
-               (*pNumbers)[size-1], n, pNumbers, (pNumbers + (size-1)));
+//        printf("list[%d]: %d   n: %d    OAddress: %p     Address: %p\n",
+//               size-1, (*pNumbers)[size-1], n, pNumbers, (pNumbers + (size-1)));
     }
 }
 
@@ -194,7 +193,7 @@ int getUserInput(){
 void startGame(int initialNumber){
 
     int *listOfNumbers;
-    int numberOfDigits = length(initialNumber);
+    int numberOfDigits = getSize(initialNumber);
     initialiseArray(&listOfNumbers, initialNumber, numberOfDigits);
     int positionOfCursor = generateCursorPosition(numberOfDigits);
     int numberOfGoes = 0;

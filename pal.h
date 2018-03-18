@@ -12,7 +12,7 @@ void moveCursorLeft( int* pPosOfCursor, int max);
 void incrementDigitInListAtPos(int* pListOfNumbers, int  positionOfCursor);
 void decrementDigitInListAtPos(int* pListOfNumbers, int  positionOfCursor);
 boolean isPalindrome(int* plistOfNumbers, int size);
-char getCommand();
+char getCommand(int* pListOfNumbers, int  positionOfCursor, int numberOfDigits, int numberOfGoes);
 void processCommand(int* pList, int size, int* pPositionOfCursor, char command);
 void startGame(int initialNumber);
 void initialiseArray(int **pNumbers ,int numbers, int size);

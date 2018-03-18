@@ -1,4 +1,4 @@
-//
+  //
 // Created by John on 06/03/2018.
 //
 
@@ -87,20 +87,23 @@ boolean isPalindrome(int* plistOfNumbers, int size){
     return True;
 }
 
-char getCommand(){
+char getCommand(int* pListOfNumbers, int  positionOfCursor, int numberOfDigits, int numberOfGoes){
     char validCharacters[] = {'a','d','w','x'};
     int size = sizeof(validCharacters)/ sizeof(char);
     char choice;
 
-    printf("\nEnter choice: (a, d, w, x)\n");
+
     while(True) {
+        printf("\nEnter choice: (a, d, w, x)\n");
         choice = myGetChar();
         for (int i = 0; i < size; i = i + 1) {
             if (choice == validCharacters[i]) {
                 return choice;
             }
         }
-        printf("\nEnter valid choice: (a, d, w, x)\n");
+
+        printf("\nInvalid Choice\n");
+        displayState(pListOfNumbers,positionOfCursor,numberOfDigits,numberOfGoes);
     }
 }
 
@@ -131,8 +134,6 @@ int getSize(int numbers){
 }
 
 void initialiseArray(int** pNumbers ,int numbers, int size){
-    //int size = getSize(numbers);
-
     *pNumbers = malloc(sizeof(int)*(size));
 
     for(size; size > 0; size--){
@@ -197,10 +198,11 @@ void startGame(int initialNumber){
     initialiseArray(&listOfNumbers, initialNumber, numberOfDigits);
     int positionOfCursor = generateCursorPosition(numberOfDigits);
     int numberOfGoes = 0;
+    char command;
 
     while(!isPalindrome(listOfNumbers,numberOfDigits)){
         displayState(listOfNumbers,positionOfCursor,numberOfDigits,numberOfGoes);
-        char command = getCommand();
+        command = getCommand(listOfNumbers,positionOfCursor,numberOfDigits,numberOfGoes);
         processCommand(listOfNumbers,numberOfDigits,&positionOfCursor,command);
         numberOfGoes++;
     }

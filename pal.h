@@ -1,6 +1,8 @@
-//
-// Created by John on 06/03/2018.
-//
+/*
+ * C Assignment1
+ * Name: John Brady
+ * Student No.: R00155390
+ */
 
 #ifndef PAL_H_INCLUDED
 #define PAL_H_INCLUDED

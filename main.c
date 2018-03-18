@@ -1,3 +1,9 @@
+/*
+ * C Assignment1
+ * Name: John Brady
+ * Student No.: R00155390
+ */
+
 #include "pal.h"
 #include <stdio.h>
 #include <stdlib.h>

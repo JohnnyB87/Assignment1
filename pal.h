@@ -14,7 +14,7 @@ void decrementDigitInListAtPos(int* pListOfNumbers, int  positionOfCursor);
 boolean isPalindrome(int* plistOfNumbers, int size);
 char getCommand(int* pListOfNumbers, int  positionOfCursor, int numberOfDigits, int numberOfGoes);
 void processCommand(int* pList, int size, int* pPositionOfCursor, char command);
-void startGame(int initialNumber);
+//void startGame(int initialNumber);
 void initialiseArray(int **pNumbers ,int numbers, int size);
 int generateCursorPosition(int size);
 int generateNumber();

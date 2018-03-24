@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/main.c
+pal.h
+C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/pal.h
+stdio.h
+-
+stdlib.h
+-
+
+C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/pal.c
+stdio.h
+-
+string.h
+-
+malloc.h
+-
+time.h
+-
+usefull.h
+C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/usefull.h
+
+C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/pal.h
+usefull.h
+C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/usefull.h
+
+C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/usefull.c
+stdio.h
+-
+usefull.h
+C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/usefull.h
+
+C:/Users/johnb/Documents/GitHub/CProjects/Assignment1/usefull.h
+
